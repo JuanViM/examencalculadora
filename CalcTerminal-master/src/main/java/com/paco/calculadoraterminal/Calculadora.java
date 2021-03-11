@@ -60,10 +60,13 @@ public class Calculadora {
     public double operar(String operacion,String operador){
  
         switch(operacion){
+        	
             case "+" -> op=op+Double.parseDouble(operador);
             case "-" -> op=op-Double.parseDouble(operador);
             case "*" -> op=op*Double.parseDouble(operador);
             case "/" -> op=op/Double.parseDouble(operador);
+            //nuevafuncionalidad
+            case "log"-> op=Math.log(op);
         }
         log.add(operacion);
         log.add(op+"");
